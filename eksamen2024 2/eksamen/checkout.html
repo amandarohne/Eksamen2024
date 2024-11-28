@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="Ikoner/css/fontawesome.css" rel="stylesheet">
+        <link href="Ikoner/css/brands.css" rel="stylesheet">
+        <link href="ikoner/css/solid.css" rel="stylesheet">
+        <title>Handlekurv</title>
+    </head>
+    <body id="kasseside">
+        <header id="global-header">
+            <nav class="nav">
+                <form>
+                    <input type="search" placeholder="Søk etter produkter" id="search"><i class="fa-solid fa-magnifying-glass icon-with-border"></i>
+                </form>
+                <ul>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="index.html#produkter">Produkter</a></li>
+                    <li><a href="index.html"><h1>LOGO</h1></a></li>
+                    <li><a href="index.html#kategorier">Kategorier</a></li>
+                    <li><a href="#kontakt">Kontakt oss</a></li>
+                </ul>
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-heart"></i>
+                <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </header>
+        <main id="checkout">
+            <h1>Kasse</h1>
+            <section>
+                <h3>1. Shoppingbaggen din</h3>
+                <article class="hvitkjole">
+                    <img src="img/produktbilde.jpg" alt="produktbilde">
+                    <a href="product.html">Hvit kjole</a>
+                    <p>1299kr</p>
+                    <p>Farge: hvit</p>
+                    <!--Image by <a href="https://pixabay.com/users/loft184-4447304/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3555646">LOFT 184 LOJA LOFT</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3555646">Pixabay</a>-->
+                </article>
+                <article class="sortkjole">
+                    <img src="img/sortkjole.jpg" alt="sort kjole">
+                    <a href="product.html">Sort kjole</a>
+                    <p>1099kr</p>
+                    <p>Farge: sort</p>
+                </article>
+                <!--Image by <a href="https://pixabay.com/users/loft184-4447304/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3555648">LOFT 184 LOJA LOFT</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3555648">Pixabay</a>-->
+                <article class="blåjeans"> 
+                    <img src="img/buksersmå.jpg" alt="jeans">
+                    <a href="product.html">Jeans</a>
+                    <p>999kr</p>
+                    <p>Farge: jeansblue</p>
+                </article>
+                <!--Image by <a href="https://pixabay.com/users/engin_akyurt-3656355/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5138278">Engin Akyurt</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5138278">Pixabay</a>-->
+            </section>
+            <section>
+                <h3>2.Opplysninger</h3>
+                <form>
+                    <label>
+                        <input type="text" required placeholder="Fornavn*" class="firstname">
+                    </label>
+                    <label>
+                        <input type="text" required placeholder="Etternavn*" class="lastname">
+                    </label>
+                    <label>
+                        <input type="text" required placeholder="Gateadresse*" class="adress">
+                    </label>
+                    <label>
+                        <input type="text" required placeholder="Postnummer*" class="postnumber">
+                    </label>
+                    <label>
+                        <input type="text" required placeholder="Poststed*" class="city">
+                    </label>
+                    <input type="submit" value="Lagre" class="save">
+                    <input type="submit" value="Avbryt" class="cancel">
+                    </form>
+            </section>
+            <section>
+                <h3>3.Levering</h3>
+                    <label class="expresshome">
+                        <input type="radio" name="leveringsvalg" value="option">
+                        Ekspresslevering hjem
+                    </label>
+                    <label class="express">
+                        <input type="radio" name="leveringsvalg" value="option" class="express">
+                        Ekspresspakke til utleveringssted
+                    </label>
+                    <label class="standard">
+                        <input type="radio" name="leveringsvalg" value="option" class="standard">
+                        Standard hjemlevering
+                    </label>
+            </section>
+            <section >
+                <h4>4.Betaling</h4>
+                <label>
+                    Kortnummer:
+                <input type="text" required placeholder="Kortnummer" class="cardnumber">
+                </label>
+                <label>
+                    Utløpsdato:
+                    <input type="text" required placeholder="Utløpsdato" class="date">
+                </label>
+                <label>
+                    CVC/CVV:
+                    <input type="text" required placeholder="CVC/CVV" class="CVC-CVV">
+                </label>
+                <p>Å betale: 3397kr</p>
+            <input type="submit" value="Fullfør kjøp" class="complete">
+            <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+            <label class="accept">
+                <input type="checkbox" required>
+                Ja, jeg godtar vilkårene
+            </label>
+            <label class="newsletter">
+                <input type="checkbox" required>
+                Ja takk! Send nyhetsbrev til meg
+            </label>
+            </section>
+        </main>
+        <footer id="kontakt" class="global-footer">
+            <section>
+                <h2>LOGO</h2>
+                <p>maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+            </section>
+            <section>
+                <h4>KONTAKT OSS</h4>
+                <p>Adresse: B R A Veien 4, 1757 Halden</p>
+                <p>Telefon: 69 60 80 00</p>
+                <p>E-post: halden@hiof.no</p>
+                <p>Åpningstider: 08:00 - 15:00</p>
+            </section>
+            <section class="snarveier">
+                <h4>SNARVEIER</h4>
+                <a href="product.html">Produkter</a>
+                <a href="index.html#kategorier">Kategori</a>
+                <a href="#kontakt">Kontakt oss</a>
+                <a href="listeoverkrav2.pdf">Tilgjengelighetserklæring</a>
+            </section>
+            <section class="some-linker">
+                <h4>SOSIALE MEDIER</h4>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://no.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+            </section>
+        </footer>
+    </body>
+    </html>
